@@ -1,4 +1,8 @@
 # OST-Assignment-CA2
+
+Roll No. 73; 
+Question No. 06
+
 You are required to print electricity bill for the no of unit. Units must be given as an input by the user, it will print the electricity bill using:  
 i. For first 50 units, it will charge Rs 9 per unit  
 ii. For next 50 units, it will charge Rs 12 and  
@@ -17,13 +21,13 @@ In this repository one can get the
 
 Last, but not least . . 
 Submitted  To - 
-      Ms. Milanjit Kaur
-      24884
-      Lovely Professional University
+      Ms. Milanjit Kaur,
+      24884,
+      Lovely Professional University.
 
 Submitted By - 
-      N S Charan Reddy
-      11601863
-      KE013 / B73
-      Lovely Professional University
+      N S Charan Reddy,
+      11601863,
+      KE013 / B73,
+      Lovely Professional University.
       
