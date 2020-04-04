@@ -24,7 +24,7 @@
 ### Test Case 1 - 
 * Electricity Bill for 45 Units 
 * 45 < 50 
-* herefore, 45*9 = 405.0
+* Therefore, 45*9 = 405.0
 
 ### Test Case 2 - 
 * Electricity Bill for 95 Units
