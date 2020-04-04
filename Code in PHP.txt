@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<?php
+$final1 = $final = '';
+if (isset($_POST['unit-submit'])) {
+    $units = $_POST['units'];
+    if (!empty($units)) {
+        $final = electricity_bill($units);
+        $final1 = 'Total Electricity Bill for the consumed ' . $units . ' Units is - Rs ' . $final . '/- Only' ;
+    }
+}
+
+function electricity_bill($units) 
+{
+    $con1 = 9;
+    $con2 = 12;
+    $con3 = 15;
+
+    if($units <= 50) 
+	{
+        $bill = $units * $con1;
+    }
+    else if($units > 50 && $units <= 100) 
+	{
+        $temp = 50 * $con1;
+        $units_left = $units - 50;
+        $bill = $temp + ($units_left * $con2);
+    }
+    else 
+	{
+        $temp = (50 * $con1) + (50 * $con2);
+        $units_left = $units - 100;
+        $bill = $temp + ($units_left * $con3);
+    }
+    return number_format((float)$bill, 1, '.', '');
+}
+?>
+<body>
+	<div id="page-wrap">
+		<h1 align="center">Electricity Bill Generation</h1>
+		<h2 align="center">Assignment For OPEN SOURCE TECHNOLOGIES - CSE 301</h2>
+		<br>
+		<h3 align="center">  Submitted By - </h3>
+		<h3 align="center">  N S CHARAN REDDY</h3>
+		<h3 align="center">  11601863</h3>
+		<h3 align="center">  KE013 / B73</h3>
+		<br>
+		<br>
+		<h3 align="center">..........................................................................................................................................</h3>
+		<br>
+		<p align = "left"> Assignment : </p>
+		<p align = "left"> You are required to print electricity bill for the no of units consumed. Units must be given as an input by the user, it will print the electricity bill using :</p>
+		<p align = "left"> i. For first 50 units, it will charge Rs 9 per unit</p>
+		<p align = "left"> ii. For next 50 units, it will charge Rs 12 and</p>
+		<p align = "left"> iii. Above it, it will charge Rs 15.</p>
+		<br>
+		<h3 align="center">..........................................................................................................................................</h3>
+		<br>
+		<br>
+		<h3 align="left">Bill Generator</h3>
+		<p align = "left">Enter the no. of units below and click on Generate button : </p>
+		<form action="" method="post" id="quiz-form">            
+            	<input type="number" name="units" id="units" placeholder="No. of units consumed . . . " />            
+            	<input type="submit" name="unit-submit" id="unit-submit" value="Generate" />			
+		</form>
+		<br>
+		<div>
+		    <?php echo '<br />' . $final1; ?>
+		</div>	
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3 align="center">THANKS FOR VISITING!!!  </h3>
+		<p align="center">Have  a nice day.</p>
+		<p align="center">~~*~~</p>
+	</div>
+</body>
+</html>
