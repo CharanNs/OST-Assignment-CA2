@@ -24,17 +24,17 @@
 ### Test Case 1 - 
 * Electricity Bill for 45 Units 
 * 45 < 50 
-* Therefore, 45*9 = 405.0
+* Therefore, 45 x 9 = 405.0
 
 ### Test Case 2 - 
 * Electricity Bill for 95 Units
 * 50 < 95 < 100
-* Therefore, (50*9)+(45*12)=990.0
+* Therefore, (50 x 9) + (45 x 12)=990.0
 
 ### Test Case 3 - 
 * Electricity Bill for 105 Units
 * 100 < 105
-* Therefore, (50*9)+(50*12)+(5*15)=1125.0
+* Therefore, (50 x 9) + (50 x 12) + (5 x 15) = 1125.0
 
 
 Github Link for the same - https://github.com/CharanNs/OST-Assignment-CA2
