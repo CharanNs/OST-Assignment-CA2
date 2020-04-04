@@ -22,19 +22,19 @@ iii. Above it, it will charge Rs 15.
 
 ## Details of Test Cases - 
 ### Test Case 1 - 
-Electricity Bill for 45 Units
-45 < 50 
-Therefore, 45*9 = 405.0
+* Electricity Bill for 45 Units 
+* 45 < 50 
+* herefore, 45*9 = 405.0
 
 ### Test Case 2 - 
-Electricity Bill for 95 Units
-50 < 95 < 100
-Therefore, (50*9)+(45*12)=990.0
+* Electricity Bill for 95 Units
+* 50 < 95 < 100
+* Therefore, (50*9)+(45*12)=990.0
 
 ### Test Case 3 - 
-Electricity Bill for 105 Units
-100 < 105
-Therefore, (50*9)+(50*12)+(5*15)=1125.0
+* Electricity Bill for 105 Units
+* 100 < 105
+* Therefore, (50*9)+(50*12)+(5*15)=1125.0
 
 
 
